@@ -4,10 +4,27 @@
     themes: dark --default;
 }
 
+.banner-style {
+  position: relative; /* make pseudo-element relative to this div */
+  overflow: hidden;   /* ensure pseudo-element stays inside */
+}
+
+.banner-style::before {
+  content: '';
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background-image: url(/asset/men.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  transform: scaleX(-1); /* flip horizontally */
+  z-index: -1; /* stay behind content */
+}
+
 :root {
-  @apply bg-gradient-to-br from-[#1f2937] via-[#111827] to-[#000000];
+    @apply bg-gradient-to-br from-[#e5e5e5] via-[#d3e1ff] to-[#b0eaff];
 }
 
 .HF {
-  @apply bg-gradient-to-br from-[#374151] via-[#1f2937] to-[#111827];
+    @apply bg-gradient-to-br from-[#b3b8ee] via-[#a6bcfc] to-[#a6adff] text-gray-700;
 }

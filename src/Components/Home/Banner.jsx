@@ -8,8 +8,8 @@ export default function Banner() {
     const image='https://i.ibb.co.com/F2r2r2s/modern-stationary-collection-arrangement-23-2149309643.jpg'
 
     return (
-        <section className=" text-white">
-            <div className=" mx-auto flex flex-col md:flex-row items-center justify-between py-16 md:py-24 ">
+        <section className=" text-white ">
+            <div className=" mx-auto flex flex-col md:flex-row items-center justify-between py-16 md:py-40 ">
 
                 {/* Left Content */}
                 <div className="max-w-lg text-center md:text-left">
@@ -37,7 +37,7 @@ export default function Banner() {
                 </div>
 
                 {/* Right Image */}
-                <div className="mt-10 md:mt-0">
+                {/* <div className="mt-10 md:mt-0">
                     <Image
                         src={image}
                         alt="Featured Product"
@@ -45,7 +45,7 @@ export default function Banner() {
                         height={450}
                         className="drop-shadow-2xl rounded-xl"
                     />
-                </div>
+                </div> */}
             </div>
         </section>
     );
