@@ -8,7 +8,7 @@ export default function Banner() {
     const image='https://i.ibb.co.com/F2r2r2s/modern-stationary-collection-arrangement-23-2149309643.jpg'
 
     return (
-        <section className=" text-white ">
+        <section className=" text-gray-700 ">
             <div className=" mx-auto flex flex-col md:flex-row items-center justify-between py-16 md:py-40 ">
 
                 {/* Left Content */}

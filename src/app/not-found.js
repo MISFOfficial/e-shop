@@ -5,7 +5,7 @@ import { FiHome } from "react-icons/fi";
 
 export default function NotFound() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen  text-white text-center px-6">
+        <div className="flex flex-col items-center justify-center min-h-screen  text-gray-700 text-center px-6">
 
             {/* 404 Big Text */}
             <h1 className="text-9xl font-extrabold tracking-widest drop-shadow-lg">

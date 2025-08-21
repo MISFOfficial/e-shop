@@ -69,7 +69,7 @@ export default function ProductsSection() {
                 <p className="text-gray-700 mb-4">{product.description}</p>
                 <Link
                   href={`/products/${product.id}`}
-                  className="inline-block bg-purple-600 text-white px-4 py-2 rounded-full shadow hover:bg-purple-500 transition duration-300"
+                  className="inline-block bg-purple-600 text-gray-700 px-4 py-2 rounded-full shadow hover:bg-purple-500 transition duration-300"
                 >
                   Details
                 </Link>

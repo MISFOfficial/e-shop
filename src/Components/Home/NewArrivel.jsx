@@ -31,7 +31,7 @@ export default function NewArrivel() {
             Check out our exclusive summer collections with limited-time offers!  
             Upgrade your wardrobe and enjoy our stylish products at unbeatable prices.
           </p>
-          <button className="bg-purple-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-purple-500 transition duration-300">
+          <button className="bg-purple-600 text-gray-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-purple-500 transition duration-300">
             Shop Now
           </button>
         </div>
