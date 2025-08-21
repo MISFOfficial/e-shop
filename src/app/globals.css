@@ -1,4 +1,13 @@
 @import "tailwindcss";
- @plugin "daisyui" {
-   themes: light --default, dark --prefersdark;
- }
+
+@plugin "daisyui" {
+    themes: dark --default;
+}
+
+:root {
+  @apply bg-gradient-to-br from-[#1f2937] via-[#111827] to-[#000000];
+}
+
+.HF {
+  @apply bg-gradient-to-br from-[#374151] via-[#1f2937] to-[#111827];
+}
