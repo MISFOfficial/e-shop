@@ -5,20 +5,20 @@
 }
 
 .banner-style {
-  position: relative; /* make pseudo-element relative to this div */
-  overflow: hidden;   /* ensure pseudo-element stays inside */
+  position: relative; 
+  overflow: hidden;  
 }
 
 .banner-style::before {
   content: '';
   position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  inset: 0; 
   background-image: url(/asset/men.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  transform: scaleX(-1); /* flip horizontally */
-  z-index: -1; /* stay behind content */
+  transform: scaleX(-1); 
+  z-index: -1; 
 }
 
 :root {
