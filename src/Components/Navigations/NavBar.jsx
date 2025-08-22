@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import NavLink from "./NavLink";
-import Login from "../Buttons/Login";
 
 export default function Navbar() {
 
@@ -20,7 +19,9 @@ export default function Navbar() {
                 </div>
 
                 <div>
-                    <Login></Login>
+                    <Link href={'/login'}>
+                        Sign In
+                    </Link>
                 </div>
             </div>
         </nav>

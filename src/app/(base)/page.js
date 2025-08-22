@@ -1,10 +1,10 @@
 import Banner from '@/Components/Home/Banner';
 import NewArrivel from '@/Components/Home/NewArrivel';
-import ProductMarquee from '@/Components/Home/ProductMarquee';
 import ProductsSection from '@/Components/Home/ProductsSection';
 import React from 'react';
 
 const HomePage = () => {
+    
     return (
         <div>
             <div className='banner-style'>
