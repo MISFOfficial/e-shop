@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import NavLink from "./NavLink";
+import Login from "../Buttons/Login";
 
 export default function Navbar() {
 
@@ -16,8 +17,12 @@ export default function Navbar() {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex ">
                     <NavLink></NavLink>
-                </div>         
-            </div> 
+                </div>
+
+                <div>
+                    <Login></Login>
+                </div>
+            </div>
         </nav>
     );
 }

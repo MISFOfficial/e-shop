@@ -16,7 +16,7 @@ export default function NotFound() {
             <p className="mt-6 text-2xl md:text-3xl font-semibold">
                 Oops! Page not found.
             </p>
-            <p className="mt-2 text-lg text-gray-200">
+            <p className="mt-2 text-lg text-gray-700">
                 Looks like this page has gone shopping 🛒
             </p>
 

@@ -5,7 +5,7 @@ export default function BaseLayout({ children }) {
   return (
     <>
       <NavBar></NavBar>
-      <div className="min-h-screen">
+      <div className="min-h-screen ">
         {children}
       </div>
       <Footer></Footer>

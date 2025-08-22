@@ -4,9 +4,8 @@ import Image from "next/image";
 
 export default function NewArrivel() {
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50">
-      <div className="container mx-auto px-6 md:flex md:items-center justify-between md:gap-12">
-        
+    <section className="py-16">
+      <div className="md:flex md:items-center justify-between md:gap-12">
         {/* Left Side - Image */}
         <div className="relative  border">
           <Image
@@ -31,7 +30,7 @@ export default function NewArrivel() {
             Check out our exclusive summer collections with limited-time offers!  
             Upgrade your wardrobe and enjoy our stylish products at unbeatable prices.
           </p>
-          <button className="bg-purple-600 text-gray-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-purple-500 transition duration-300">
+          <button className="bg-purple-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-purple-500 transition duration-300">
             Shop Now
           </button>
         </div>

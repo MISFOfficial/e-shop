@@ -14,12 +14,14 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <NewArrivel></NewArrivel>
+            <div className='px-6 lg:px-0 max-w-7xl mx-auto '>
+                <NewArrivel></NewArrivel>
+            </div>
             {/* <ProductMarquee></ProductMarquee> */}
             <div className=' bg-gray-50 py-16'>
-               <div className='px-6 lg:px-0 max-w-[1600px] mx-auto '>
-                 <ProductsSection></ProductsSection>
-               </div>
+                <div className='px-6 lg:px-0 max-w-7xl mx-auto '>
+                    <ProductsSection></ProductsSection>
+                </div>
             </div>
         </div>
     );

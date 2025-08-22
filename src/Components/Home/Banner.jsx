@@ -1,16 +1,15 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 export default function Banner() {
 
-    const image='https://i.ibb.co.com/F2r2r2s/modern-stationary-collection-arrangement-23-2149309643.jpg'
+    const image = 'https://i.ibb.co.com/F2r2r2s/modern-stationary-collection-arrangement-23-2149309643.jpg'
 
     return (
-        <section className=" text-gray-700 ">
+        <section className=" text-white ">
             <div className=" mx-auto flex flex-col md:flex-row items-center justify-between py-16 md:py-40 ">
-
                 {/* Left Content */}
                 <div className="max-w-lg text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">

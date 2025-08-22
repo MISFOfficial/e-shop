@@ -11,7 +11,7 @@ export default function Footer() {
                 {/* Logo & About */}
                 <div>
                     <h2 className="text-2xl font-bold mb-4">E-Shop</h2>
-                    <p className="text-gray-200 text-sm">
+                    <p className="text-gray-700 text-sm">
                         Your one-stop destination for trendy fashion and quality products.
                         Shop with us and experience the best deals online!
                     </p>
@@ -20,7 +20,7 @@ export default function Footer() {
                 {/* Quick Links */}
                 <div>
                     <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-                    <ul className="space-y-2 text-gray-200">
+                    <ul className="space-y-2 text-gray-700">
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/shop">Shop</Link></li>
                         <li><Link href="/about">About</Link></li>
@@ -31,7 +31,7 @@ export default function Footer() {
                 {/* Customer Support */}
                 <div>
                     <h3 className="text-xl font-semibold mb-4">Customer Support</h3>
-                    <ul className="space-y-2 text-gray-200">
+                    <ul className="space-y-2 text-gray-700">
                         <li><Link href="/faq">FAQ</Link></li>
                         <li><Link href="/returns">Returns</Link></li>
                         <li><Link href="/shipping">Shipping</Link></li>
@@ -52,7 +52,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom Footer */}
-            <div className="border-t border-gray-400 mt-6 py-4 text-center text-sm text-gray-200">
+            <div className="border-t border-gray-400 mt-6 py-4 text-center text-sm text-gray-700">
                 © {new Date().getFullYear()} E-Shop. All Rights Reserved.
             </div>
         </footer>
