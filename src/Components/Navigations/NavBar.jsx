@@ -2,25 +2,18 @@
 
 import Link from "next/link";
 import NavLink from "./NavLink";
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Profile from "./Profile";
 
 export default function Navbar() {
 
     const { status } = useSession()
 
-    // if (status === "loading") {
-    //     return <p className="text-gray-500">Loading session...</p>;
-    // }
-
-
-    console.log(status)
-
     return (
-        <nav className="HF shadow-lg sticky top-0 z-50">
+        <nav className="HF shadow-lg sticky top-0 z-50  h-20 flex items-center">
             <div className="container mx-auto flex items-center justify-between px-6 py-2 text-light2">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-extrabold text-light2">
+                <Link href="/" className="text-2xl font-extrabold text-light2 border">
                     E-Shop
                 </Link>
 

@@ -15,12 +15,28 @@ export const authOptions = {
                 const user = await loginUser(credentials)
                 if (user) {
                     return user
-                } else { 
+                } else {
                     return null
                 }
             }
         })
     ],
+
+    callbacks: {
+ 
+        async session({ session, token, user }) {
+            if(token){
+                session.user.username=token.username
+            }
+            return session
+        },
+        async jwt({ token, user, account, profile, isNewUser }) {
+            if(user){
+                token.username=user.name
+            }
+            return token
+        }
+    },
 
     pages: {
         signIn: '/login',

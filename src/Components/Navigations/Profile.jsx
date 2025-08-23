@@ -23,7 +23,7 @@ const Profile = () => {
             confirmButtonText: "Yes, log me out",
         }).then((result) => {
             if (result.isConfirmed) {
-                signOut({ callbackUrl: "/login" }); // ✅ Logout and redirect to login page
+                signOut({ callbackUrl: "/login" }); // Logout and redirect to login page
                 Swal.fire("Logged Out!", "You have been logged out successfully.", "success");
             }
         });

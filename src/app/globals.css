@@ -42,3 +42,7 @@
 .text-dark2 {
   @apply text-black
 }
+
+/* body{
+  line-height: 0;
+} */

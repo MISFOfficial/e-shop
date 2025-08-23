@@ -12,13 +12,13 @@ const loginUser = async (payload) => {
     }
 
     const isPasswordOk =await bcrypt.compare(password, user.password)
-    console.log(user)
+    // console.log(user)
 
     if (!isPasswordOk) {
         return null
     }
     else {
-        console.log('password ok', isPasswordOk)
+        // console.log('password ok', isPasswordOk)
         return user
     }
 };

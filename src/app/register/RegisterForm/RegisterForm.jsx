@@ -1,4 +1,5 @@
 import registerUser from '@/app/actions/auth/registerUser';
+import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useState } from "react";
@@ -14,16 +15,15 @@ const RegisterForm = () => {
 
     const handleRegister = async (e) => {
         e.preventDefault();
-        const result = await registerUser({ name, email, password });
 
-        console.log(result)
-        const { insertedId } = result
-        if (insertedId) {
-            alert('ok')
+         await registerUser({ name, email, password });
+         
+        const respons = await signIn('credentials', { email, password, redirect: false, callbackUrl: '/' })
+        // console.log('logins result', result)
+        if (respons.ok) {
             route.push('/')
-        }
-        else {
-            alert('account already created')
+        } else {
+            alert('authetingcation failedfasdfasdfa')
         }
     };
     return (
