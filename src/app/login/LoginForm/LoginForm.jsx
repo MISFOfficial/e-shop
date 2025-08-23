@@ -15,16 +15,12 @@ const LoginForm = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        try {
-            const result = await signIn('credentials', { email, password, redirect: false })
-
-            console.log('logins result', result)
-            if (result.status === 200) {
-                router.push('/')
-            }
-
-        } catch (error) {
-            alert('dfadsfas')
+        const result = await signIn('credentials', { email, password, redirect: false, callbackUrl:'/' })
+        console.log('logins result', result)
+        if (result.ok) {
+            router.push('/')
+        } else {
+            alert('authetingcation failedfasdfasdfa')
         }
     };
     return (
@@ -60,7 +56,7 @@ const LoginForm = () => {
                 {/* Login Button */}
                 <button
                     type="submit"
-                    className="w-full bg-yellow-400 text-gray-900 font-semibold py-3 rounded-xl shadow-lg hover:bg-yellow-300 transition duration-300"
+                    className="w-full bg-yellow-400 text-light2 font-semibold py-3 rounded-xl shadow-lg hover:bg-yellow-300 transition duration-300"
                 >
                     Login
                 </button>

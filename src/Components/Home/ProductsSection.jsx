@@ -17,7 +17,7 @@ export default async function ProductsSection() {
   return (
     <section className="">
       <div>
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center">
+        <h2 className="text-4xl font-extrabold text-dark mb-10 text-center">
           Our Featured Products
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -36,9 +36,8 @@ export default async function ProductsSection() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h3>
-                {/* <h3 className="text-xl font-bold text-gray-900 mb-2">{product._id}</h3> */}
-                <p className="text-gray-700 mb-4">{product.description}</p>
+                <h3 className="text-xl font-bold text-dark mb-2">{product.title}</h3>
+                <p className="text-dark mb-4">{product.description}</p>
                 <Link
                   href={`/productsDetails/${product._id}`}
                   className="inline-block bg-purple-600 text-white px-4 py-2 rounded-full shadow hover:bg-purple-500 transition duration-300"

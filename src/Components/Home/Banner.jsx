@@ -22,7 +22,7 @@ export default function Banner() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <Link
                             href="/shop"
-                            className="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300"
+                            className="bg-yellow-400 text-dark font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300"
                         >
                             Shop Now
                         </Link>

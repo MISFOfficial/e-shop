@@ -1,5 +1,4 @@
 'use server'
-
 import dbConnect, { CollectionsName } from "@/lib/dbConnect";
 import bcrypt from 'bcrypt'
 
@@ -11,8 +10,8 @@ const loginUser = async (payload) => {
     if (!user) {
         return null
     }
-    const isPasswordOk =await bcrypt.compare(password, user.password)
 
+    const isPasswordOk =await bcrypt.compare(password, user.password)
     console.log(user)
 
     if (!isPasswordOk) {

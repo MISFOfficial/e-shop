@@ -5,7 +5,7 @@ import { FiHome } from "react-icons/fi";
 
 export default function NotFound() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen  text-gray-700 text-center px-6">
+        <div className="flex flex-col items-center justify-center min-h-screen  text-light text-center px-6">
 
             {/* 404 Big Text */}
             <h1 className="text-9xl font-extrabold tracking-widest drop-shadow-lg">
@@ -16,14 +16,14 @@ export default function NotFound() {
             <p className="mt-6 text-2xl md:text-3xl font-semibold">
                 Oops! Page not found.
             </p>
-            <p className="mt-2 text-lg text-gray-700">
+            <p className="mt-2 text-lg text-light">
                 Looks like this page has gone shopping 🛒
             </p>
 
             {/* Button */}
             <Link
                 href="/"
-                className="mt-8 inline-flex items-center gap-2 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300"
+                className="mt-8 inline-flex items-center gap-2 bg-yellow-400 text-light2 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300"
             >
                 <FiHome size={22} /> Back to Home
             </Link>

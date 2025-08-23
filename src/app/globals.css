@@ -1,30 +1,44 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-    themes: dark --default;
+  themes: dark --default;
 }
 
 .banner-style {
-  position: relative; 
-  overflow: hidden;  
+  position: relative;
+  overflow: hidden;
 }
 
 .banner-style::before {
   content: '';
   position: absolute;
-  inset: 0; 
+  inset: 0;
   background-image: url(/asset/men.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  transform: scaleX(-1); 
-  z-index: -1; 
+  transform: scaleX(-1);
+  z-index: -1;
 }
 
 :root {
-    @apply bg-gradient-to-br from-[#e5e5e5] via-[#d3e1ff] to-[#b0eaff];
+  @apply bg-gradient-to-br from-[#5e5ebc] via-[#6d6dd2] to-[#272785];
 }
 
 .HF {
-    @apply bg-gradient-to-br from-[#b3b8ee] via-[#a6bcfc] to-[#a6adff] text-gray-700;
+  @apply bg-gradient-to-br from-[#7171d6] via-[#7f7fe8] to-[#6161cf];
+}
+
+
+.text-light {
+  @apply text-gray-300
+}
+.text-light2 {
+  @apply text-white
+}
+.text-dark {
+  @apply text-[#1f1e1e]
+}
+.text-dark2 {
+  @apply text-black
 }

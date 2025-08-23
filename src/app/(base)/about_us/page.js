@@ -41,7 +41,7 @@ export default function AboutUs() {
     <div className="">
 
       {/* Hero Banner */}
-      <section className="py-20  text-gray-700 text-center">
+      <section className="py-20  text-light2 text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
           About Us
         </h1>
@@ -54,21 +54,21 @@ export default function AboutUs() {
       {/* Mission / Values */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+          <h3 className="text-3xl md:text-4xl font-bold text-dark mb-10">
             Our Mission & Values
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
-              <h4 className="text-xl font-bold mb-2 text-gray-700">Quality Products</h4>
-              <p className="text-gray-700">We ensure that every product you buy is premium quality and meets your expectations.</p>
+              <h4 className="text-xl font-bold mb-2 text-dark">Quality Products</h4>
+              <p className="text-dark">We ensure that every product you buy is premium quality and meets your expectations.</p>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
-              <h4 className="text-xl font-bold mb-2 text-gray-700">Affordable Prices</h4>
-              <p className="text-gray-700">We provide competitive prices and amazing discounts on all our collections.</p>
+              <h4 className="text-xl font-bold mb-2 text-dark">Affordable Prices</h4>
+              <p className="text-dark">We provide competitive prices and amazing discounts on all our collections.</p>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
-              <h4 className="text-xl font-bold mb-2 text-gray-700">Customer Satisfaction</h4>
-              <p className="text-gray-700">Our priority is your happiness. We strive to provide a seamless shopping experience.</p>
+              <h4 className="text-xl font-bold mb-2 text-dark">Customer Satisfaction</h4>
+              <p className="text-dark">Our priority is your happiness. We strive to provide a seamless shopping experience.</p>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function AboutUs() {
       {/* Team Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+          <h3 className="text-3xl md:text-4xl font-bold text-dark mb-10">
             Meet Our Team
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -91,8 +91,8 @@ export default function AboutUs() {
                   height={200}
                   className="rounded-full mx-auto mb-4"
                 />
-                <h4 className="text-xl text-gray-700 font-bold mb-1">{member.name}</h4>
-                <p className="text-gray-700">{member.role}</p>
+                <h4 className="text-xl text-dark font-bold mb-1">{member.name}</h4>
+                <p className="text-dark">{member.role}</p>
               </div>
             ))}
           </div>
@@ -100,13 +100,13 @@ export default function AboutUs() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20  text-gray-700">
+      <section className="py-20  text-dark">
         <div className="container mx-auto px-6 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-12">What Our Customers Say</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mb-12 text-light2">What Our Customers Say</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testi, idx) => (
               <div key={idx} className="bg-white bg-opacity-20 rounded-xl p-6 shadow-lg">
-                <p className="text-gray-700 italic mb-4">{testi.feedback}</p>
+                <p className="text-dark italic mb-4">{testi.feedback}</p>
                 <div className="flex items-center justify-center gap-4">
                   <Image
                     src={testi.image}
@@ -115,7 +115,7 @@ export default function AboutUs() {
                     height={50}
                     className="rounded-full"
                   />
-                  <span className="font-bold text-gray-700">{testi.name}</span>
+                  <span className="font-bold text-dark">{testi.name}</span>
                 </div>
               </div>
             ))}
@@ -124,7 +124,7 @@ export default function AboutUs() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-yellow-400 text-gray-900 text-center">
+      <section className="py-20 bg-yellow-400 text-dark text-center">
         <h3 className="text-3xl md:text-4xl font-bold mb-6">
           Ready to Upgrade Your Style?
         </h3>

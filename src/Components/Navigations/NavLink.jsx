@@ -3,15 +3,15 @@ import React from 'react';
 
 const NavLink = () => {
     return (
-        <ul className='flex items-center gap-15'>
+        <ul className='flex items-center gap-10'>
             <Link href={'/'}>
-                <li className='text-gray-700 font-bold text-lg'>Home</li>
+                <li className='text-light2 font-bold text-lg'>Home</li>
             </Link>
             <Link href={'/products'}>
-                <li className='text-gray-700 font-bold text-lg'>Products</li>
+                <li className='text-light2 font-bold text-lg'>Products</li>
             </Link>
             <Link href={'/about_us'}>
-                <li className='text-gray-700 font-bold text-lg'>About Us</li>
+                <li className='text-light2 font-bold text-lg'>About Us</li>
             </Link>
         </ul>
     );
