@@ -39,7 +39,7 @@ const Profile = () => {
                         tabIndex={0} role="button" className="w-14 h-15 object-cover rounded-full"></Image>
                     <h1 className='mt-5 font-bold '>{user?.email}</h1>
                 </div>
-                <li ><a>Deshborad</a></li>
+                <li ><a href='deshboard/user_profile'>Deshborad</a></li>
                 <li onClick={handleLogout} className='text-red-500'><a>Log out</a></li>
             </ul>
         </div>

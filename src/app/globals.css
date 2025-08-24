@@ -25,6 +25,10 @@
   @apply bg-gradient-to-br from-[#5e5ebc] via-[#6d6dd2] to-[#272785];
 }
 
+body{
+  @apply min-h-screen
+}
+
 .HF {
   @apply bg-gradient-to-br from-[#7171d6] via-[#7f7fe8] to-[#6161cf];
 }

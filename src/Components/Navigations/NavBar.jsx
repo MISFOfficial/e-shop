@@ -13,7 +13,7 @@ export default function Navbar() {
         <nav className="HF shadow-lg sticky top-0 z-50  h-20 flex items-center">
             <div className="container mx-auto flex items-center justify-between px-6 py-2 text-light2">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-extrabold text-light2 border">
+                <Link href="/" className="text-2xl font-extrabold text-light2 ">
                     E-Shop
                 </Link>
 

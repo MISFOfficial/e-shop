@@ -12,7 +12,7 @@ export default function Banner() {
             <div className=" mx-auto flex flex-col md:flex-row items-center justify-between py-16 md:py-40 ">
                 {/* Left Content */}
                 <div className="max-w-lg text-center md:text-left">
-                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4 ">
                         Welcome to <span className="text-yellow-300">E-Shop</span>
                     </h1>
                     <p className="text-lg md:text-xl text-gray-100 mb-6">
