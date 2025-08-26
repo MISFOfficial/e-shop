@@ -8,7 +8,7 @@ import { useSession } from "next-auth/react";
 export default function Register() {
 
     const session=useSession()
-    console.log(session)
+    // console.log(session)
  
     return (
         <div className="min-h-screen flex items-center justify-center">

@@ -23,16 +23,17 @@ export const authOptions = {
     ],
 
     callbacks: {
- 
+
         async session({ session, token, user }) {
-            if(token){
-                session.user.username=token.username
+            if (token) {
+                session.user.username = token.username
             }
             return session
         },
         async jwt({ token, user, account, profile, isNewUser }) {
-            if(user){
-                token.username=user.name
+            if (user) {
+                token.username = user.name
+                token.role = user.role
             }
             return token
         }

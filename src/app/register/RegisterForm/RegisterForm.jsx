@@ -16,8 +16,10 @@ const RegisterForm = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
 
-         await registerUser({ name, email, password });
-         
+        const role = 'user'
+
+        await registerUser({ name, email, password, role });
+
         const respons = await signIn('credentials', { email, password, redirect: false, callbackUrl: '/' })
         // console.log('logins result', result)
         if (respons.ok) {

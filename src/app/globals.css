@@ -33,6 +33,12 @@ body{
   @apply bg-gradient-to-br from-[#7171d6] via-[#7f7fe8] to-[#6161cf];
 }
 
+@layer base {
+  h1 {
+    @apply leading-none;
+  }
+}
+
 
 .text-light {
   @apply text-gray-300

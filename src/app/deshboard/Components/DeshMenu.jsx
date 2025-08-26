@@ -1,8 +1,10 @@
 import { IoSettings } from "react-icons/io5";
 import { FaBoxOpen, FaHistory, FaHome, FaSearchLocation, FaSignOutAlt, FaUserEdit } from 'react-icons/fa';
 import Link from 'next/link';
+import { getToken } from "next-auth/jwt";
 
 const DeshMenu = () => {
+
     return (
         <div className="drawer-side">
             <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
@@ -10,56 +12,13 @@ const DeshMenu = () => {
                 <ul className="menu  p-4">
                     {/* Sidebar content here */}
                     <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaHome /> Manage Profile
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaBoxOpen /> My Booking
-                        </Link>
-                    </li>
-
-
-                    <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaHistory /> Add Story
+                        <Link href={'/deshboard/user_profile'} className="flex items-center gap-2">
+                            <FaHome /> Profile
                         </Link>
                     </li>
                     <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaSearchLocation /> Mange Stories
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaSearchLocation /> Join as a Tour Guide
-                        </Link>
-                    </li>
-
-
-                    <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaUserEdit /> My Assigned Tours
-                        </Link>
-                    </li>
-
-
-
-                    <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaUserEdit /> Add Package
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaUserEdit /> Manage Users
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={''} className="flex items-center gap-2">
-                            <FaUserEdit /> Manage Candidates
+                        <Link href={'/deshboard/add_product'} className="flex items-center gap-2">
+                            <FaHome /> Add Product
                         </Link>
                     </li>
 
