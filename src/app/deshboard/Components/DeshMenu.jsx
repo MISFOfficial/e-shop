@@ -1,5 +1,5 @@
 import { IoSettings } from "react-icons/io5";
-import { FaBoxOpen, FaHistory, FaHome, FaSearchLocation, FaSignOutAlt, FaUserEdit } from 'react-icons/fa';
+import { FaBoxOpen, FaHistory, FaHome, FaSearchLocation, FaSignOutAlt, FaUser, FaUserEdit } from 'react-icons/fa';
 import Link from 'next/link';
 import { getToken } from "next-auth/jwt";
 
@@ -12,8 +12,13 @@ const DeshMenu = () => {
                 <ul className="menu  p-4">
                     {/* Sidebar content here */}
                     <li>
+                        <Link href={'/'} className="flex items-center gap-2">
+                            <FaHome /> Main Page
+                        </Link>
+                    </li>
+                    <li>
                         <Link href={'/deshboard/user_profile'} className="flex items-center gap-2">
-                            <FaHome /> Profile
+                            <FaUser /> Profile
                         </Link>
                     </li>
                     <li>

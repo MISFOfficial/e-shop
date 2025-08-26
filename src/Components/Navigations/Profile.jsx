@@ -35,7 +35,7 @@ const Profile = () => {
                 tabIndex={0} role="button" className="w-14 h-15 object-cover rounded-full cursor-pointer"></Image>
             <ul tabIndex={0} className="dropdown-content menu  bg-white rounded-box z-1 w-60 p-4 mt-10 shadow-sm text-dark">
                 <div className='border bg-gray-200 rounded place-items-center p-2 mb-5'>
-                    <Image src={img} width={100} height={100}
+                    <Image src={img} width={100} height={100} alt={user?.name}
                         tabIndex={0} role="button" className="w-14 h-15 object-cover rounded-full"></Image>
                     <h1 className='mt-5 font-bold '>{user?.email}</h1>
                 </div>

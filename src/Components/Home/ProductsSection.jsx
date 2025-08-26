@@ -8,9 +8,9 @@ import Link from "next/link";
 
 export default async function ProductsSection() {
 
-  const productCollections= dbConnect(CollectionsName.productCollections)
+  const productCollections = dbConnect(CollectionsName.productCollections)
 
-  const products = await productCollections.find({}).toArray()
+  const products = await productCollections.find({}).limit(3).toArray()
 
   // console.log(products.map(m=> m._id))
 
